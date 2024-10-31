@@ -389,6 +389,10 @@ header .navbar{
 .contact-section .contact-form .form-input:focus{
     border-color: var(--secondary-color);
 }
+.contact-section .contact-form textarea{
+    max-width: 100%;
+    max-height: 50%;
+}
 .contact-section .contact-form textarea .form-input{
     height: 100px;
     padding: 12px;
@@ -419,7 +423,7 @@ header .navbar{
 .footer-section .section-content{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .footer-section :where(.copyright-text, .social-media-link, .policy-link){
     color: var(--white-color);

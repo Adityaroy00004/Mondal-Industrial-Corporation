@@ -30,7 +30,7 @@
                     <a href="#partners" class="nav-link">Partners</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#cont" class="nav-link">Contact</a>
                 </li>
             </ul>
             <button id="menu-open-button" class="fas fa-bars"></button>
@@ -166,7 +166,7 @@
         
         <!-- contact section -->
 
-        <section class="contact-section" id="contact">
+        <section class="contact-section" id="cont">
             <h2 class="section-title">Contact Us</h2>
             <div class="section-content">
                 <ul class="contact-info-list">    
@@ -196,11 +196,12 @@
                         <p>www.mondalindustrialcorporation.com</p>
                     </li>
                 </ul>
-                <form action="#" class="contact-form">
-                    <input type="text"  placeholder=" your name" class="form-input">
-                    <input type="email" placeholder=" your email" class="form-input">
-                    <textarea placeholder=" your message" class="form-input"></textarea>
-                    <button class="submit-button">Submit</button>
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                    <input type="hidden" name="access_key" value="d5b91375-9572-481f-a15e-fe5fb7a28784">
+                    <input type="text" name="name" placeholder=" your name" class="form-input">
+                    <input type="email" name="email" placeholder=" your email" class="form-input">
+                    <textarea name="message" placeholder=" your message" class="form-input"></textarea>
+                    <button type="submit" class="submit-button">Submit</button>
                 </form>
             </div>
         </section>
