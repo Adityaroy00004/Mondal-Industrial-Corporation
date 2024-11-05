@@ -50,3 +50,73 @@ const swiper = new Swiper('.slider-wrapper', {
     // },
 
   });
+
+  function infiniteSlid(){
+    window.addEventListener("wheel",function(dets){
+      if(dets.deltaY > 0){
+        gsap.to(".move .masqute",{
+          transform: "translateX(-200%)",
+          duration:4,
+          repeat:-1,
+          ease:"none"
+        })
+        gsap.to(".masqute img",{
+          rotate:180,
+        })
+      }else{
+        gsap.to(".move .masqute",{
+          transform: "translateX(0%)",
+          duration:4,
+          repeat:-1,
+          ease:"none"
+        })
+        gsap.to(".masqute img",{
+          rotate:0
+        })
+      }
+    })
+  }
+  infiniteSlid()
+ 
+  gsap.from(".about-image-wrapper",{
+    x:-400,
+    opacity:0,
+    // delay:1,
+    duration:1,
+    scrollTrigger:{
+      trigger:".about-section .about-image-wrapper",
+      scroll:"body",
+      start:"top 60%",
+      end:"bottom 30%",
+     
+    }
+  })
+  gsap.from(".about-details",{
+    x:400,
+    opacity:0,
+    duration:1,
+    // delay:1,
+    scrollTrigger:{
+      trigger:".about-section .about-image-wrapper",
+      scroll:"body",
+      start:"top 60%",
+      end:"bottom 30%",
+      
+    }
+  })
+  gsap.to(".about-section .bg-about",{
+    // x:400,
+    scale:0.7,
+    opacity:0,
+    duration:.5,
+    scrollTrigger:{
+      trigger:".about-section .about-image-wrapper",
+      scroll:"body",
+      start:"top 60%",
+      end:"top 30%",
+    }
+  })
+
+
+
+  
