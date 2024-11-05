@@ -50,3 +50,33 @@ const swiper = new Swiper('.slider-wrapper', {
     // },
 
   });
+
+//   let tl = gsap.timeline();
+//   tl.from(".about-image-wrapper",{
+//     x:-900,
+//     // scale:0,
+//     opacity:0,
+//     duration:2,
+//     scrollTrigger:{
+//         trigger:".about-image-wrapper",
+//         scroller:"body",
+//         start:"top 60%",
+//         end:"top 30%",
+//         scrub:2,
+//         markers:true,
+//     }
+//   },"a")
+//   tl.from(".about-section .section-content",{
+//     opacity:0,
+//     duration:2,
+//     x:500,
+//     scrollTrigger:{
+//         trigger:".about-image-wrapper",
+//         scroller:"body",
+//         start:"top 60%",
+//         end:"top 30%",
+//         scrub:2,
+//         markers:true,
+//     }
+//   },"a")
+

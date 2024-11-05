@@ -157,7 +157,7 @@ header .navbar{
 
 .hero-section{
     min-height: 100vh;
-    background-image: url("cprimage.webp");
+    /* background-image: url("cprimage.webp"); */
     background-size: cover;
     background-position: center;
     /* filter: blur(2px); */
@@ -233,6 +233,7 @@ header .navbar{
     padding:0px 50px;
     align-items: center;
     justify-content: space-evenly;
+    position: relative;
 }
 .about-section .about-image-wrapper .about-image{
     width: 400px;
@@ -269,7 +270,7 @@ header .navbar{
 
 /* ------ menu section ------ */
 
-.menu-section {
+/* .menu-section {
     color: var(--white-color);
     background: var(--dark-color);
     padding: 50px 0 100px;
@@ -280,30 +281,216 @@ header .navbar{
    flex-wrap: wrap;
    gap: 110px;
    align-items: center; 
-   justify-content: space-between;
+   justify-content: space-evenly;
 }
 .menu-section .menu-list .menu-item{
     display: flex;
+    flex: wrap;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    justify-content: space-between;
     width: calc(100% / 3 - 110px);
     border: 5px white;
+    border: 2px solid white;
+    height: 700px;
+    background-color: #252525;
+    transition: 1s;
+}
+.menu-section .menu-list .menu-item:hover{
+    border: 1px solid var(--secondary-color);
+    transform: scale(1.05);
+    border-radius: 5px; */
+    /* box-shadow: 10px 10px 10px white;
+    backdrop-filter: blur(50px); */
+/* }
+.menu-section .menu-list .menu-item .text{
+    text-align: left;
+    padding: 10px;
 }
 .menu-section .menu-list .menu-item .menu-image{
-    height: 300px;
+    height: 400px;
     width: 400px;
     max-width: 83%;
     aspect-ratio: 1;
     margin-bottom: 15px;
     object-fit: cover;
+    padding: 20px;
 }
 .menu-section .menu-list .menu-item .name{
     font-size: var(--font-size-m);
     color: var(--secondary-color);
     text-transform: uppercase;
+} */
+
+/* --------------General Styling for the Menu Section--------------- */
+
+/* General Menu Section */
+.menu-section {
+    padding: 60px 0;
+    background-color: #f5f7f8;
+    text-align: center;
 }
+
+.section-title {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Animating the product list */
+.menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Hover effect for menu item cards */
+.menu-item {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-out forwards;
+    position: relative;
+    transform: translateY(20px); /* Start from below */
+}
+
+/* Hover effect for product card */
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    background-color: #fafafa; /* Slight background change */
+}
+
+/* Image zoom effect */
+.menu-item .menu-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover .menu-image {
+    transform: scale(1.1);
+}
+
+/* Title hover effect */
+.menu-item .name {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #333;
+    margin-top: 20px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.menu-item:hover .name {
+    color: #ff7f50;
+    text-decoration: underline;
+}
+
+/* Description with fade-in effect */
+.menu-item .text {
+    font-size: 1em;
+    color: #777;
+    margin-top: 15px;
+    max-height: 80px;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    line-height: 1.5;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards 0.4s; /* Delay for smooth appearance */
+}
+
+/* Read More Button */
+.menu-item .read-more-btn {
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards 0.6s; /* Slight delay */
+}
+
+.menu-item .read-more-btn:hover {
+    background-color: #ff5722;
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Price and CTA Button */
+.product-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+}
+
+.cta-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Animation Effects */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .menu-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        width: 90%;
+    }
+
+    .section-title {
+        font-size: 2em;
+    }
+}
+
 
 /* testimonials or partner section */
 
