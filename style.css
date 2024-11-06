@@ -106,10 +106,13 @@ button{
 /* -----------navbar----------- */
 
 header{
-    background:var(--primary-color);
+    background:var(--white-color);
     position: fixed;
     z-index: 5;
     width: 100%;
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+    border: 2px solid rgba(255, 255, 255, 0.18);
 }
 .section-title{
     text-align: center;
@@ -132,8 +135,6 @@ header .navbar{
     align-items: center;
     justify-content: space-between;
     font-family: helvetica;
-    
-
 }
 .navbar .logo-text{
     color: #2e2d2d;
@@ -179,17 +180,21 @@ header .navbar{
     align-items:center;
     min-height: 100vh;
     justify-content: space-evenly;
-    /* position: absolute; */
+    position: relative;
 }
 .hero-section .hero-details .title{
     /* color:var(--secondary-color); */
-    color: #2e2d2d;
     text-transform: uppercase;
+    z-index: 4;
 }
 .hero-section .hero-details h1{
+    color: #2e2d2d;
     font-family: oswal-regular;
+    text-transform: uppercase;
     font-size: 5rem;
+    line-height: 7vw;
     letter-spacing: 2px;
+    z-index: 4;
 }
 .hero-section .hero-details .subtitle{
     margin-top: 8px;
@@ -198,6 +203,7 @@ header .navbar{
     font-family: oswal-regular;
     font-weight: var(--font-weight-semibold);
     color: #707070c9;
+    z-index: 4;
 }
 .hero-section .hero-details .description{
     font-family: oswal-light;
@@ -205,6 +211,7 @@ header .navbar{
     max-width: 70%;
     margin: 24px 0px 40px;
     color: #303030;
+    z-index: 9;
 }
 .hero-section .hero-details .button{
     padding: 10px 26px;
@@ -214,35 +221,55 @@ header .navbar{
     background: var(--secondary-color);
     font-weight: var(--font-weight-medium);
     transition: 1s ease;
+    z-index: 4;
 }
 .hero-section .hero-details .button:hover,
 .hero-section .hero-details .contact-us{
     color: var(--blue-color);
     border-color: var(--blue-color);
     background: transparent;
+    z-index: 4;
 }
 .hero-section .hero-details .contact-us:hover{
     color: var(--dark-color);
     border-color: var(--dark-color);
     background: var(--secondary-color);
+    z-index: 4;
 }
 .hero-section .hero-details .buttons{
   display: flex;
   gap: 23px;
+  z-index: 4;
 
 }
 .hero-section .hero-image-wrapper{
-    max-width:500px;
-    margin-right: 30px;
+    
+    height: 450px;
     box-shadow: aqua;
-    transition: transform 1s;
+    z-index: 4;
 }
-.hero-section .hero-image-wrapper:hover{
+.hero-section .hero-image-wrapper img{
+    transition: transform 1s;
+    height: 480px;
+}
+.hero-section .hero-image-wrapper img:hover{
     transform: scale(1.1);
+}
+
+.hero-section .section-content .bg-text{
+    position: absolute;
+    top: 83%;
+    right: 4%;
+}
+.hero-section .section-content .bg-text h1{
+    font-size: 5rem;
+    font-family:oswal-regular;
+    letter-spacing: 1px;
+    color:  #e8e6e6c9;
 }
 .hero-section .move{
     /* height: 13vh; */
-    background-color: yellow;
+    background-color: #FFA500;
     /* width: 100vw; */
     display: flex;
     /* align-items: center; */
@@ -273,7 +300,7 @@ header .navbar{
     height: 3vw;
     /* width: 20px; */
 }
-/* about */
+/* ----------------about---------------- */
 .about-section {
     height: 100vh;
     width: 100vw;
@@ -293,7 +320,7 @@ header .navbar{
     font-size: 20rem;
     font-weight: 700;
     font-family:oswal-regular;
-    color:  #707070c9;
+    color:  black;
 }
 .about-section .section-content{
     /* z-index: 1; */
@@ -342,40 +369,88 @@ header .navbar{
 
 /* ------ menu section ------ */
 
+/* Section Styles */
 .menu-section {
-    color: var(--white-color);
-    background: var(--dark-color);
-    padding: 50px 0 100px;
+    padding: 2rem;
+    background-color: #f4f4f9;
+    text-align: center;
 }
 
-.menu-section .menu-list{
-   display: flex;
-   flex-wrap: wrap;
-   gap: 110px;
-   align-items: center; 
-   justify-content: space-between;
-}
-.menu-section .menu-list .menu-item{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-between;
-    width: calc(100% / 3 - 110px);
-    border: 5px white;
-}
-.menu-section .menu-list .menu-item .menu-image{
-    height: 300px;
-    width: 400px;
-    max-width: 83%;
-    aspect-ratio: 1;
-    margin-bottom: 15px;
-    object-fit: cover;
-}
-.menu-section .menu-list .menu-item .name{
-    font-size: var(--font-size-m);
-    color: var(--secondary-color);
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
     text-transform: uppercase;
+}
+
+.section-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* List Styles */
+.menu-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Item Styles */
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.menu-item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+/* Image Styling */
+.menu-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/* Name Styling */
+.name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+/* Buy Button Styling */
+.buy {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.buy:hover {
+    background-color: #0056b3;
 }
 
 /* testimonials or partner section */

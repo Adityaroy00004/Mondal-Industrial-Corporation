@@ -78,6 +78,15 @@ const swiper = new Swiper('.slider-wrapper', {
   }
   infiniteSlid()
  
+  gsap.from(".hero-section .hero-details h1,.hero-section .hero-details h3",{
+    y:100,
+    duration:1.5,
+    opacity:0,
+    delay:.5,
+    stagger:0.2,
+  })
+
+
   gsap.from(".about-image-wrapper",{
     x:-400,
     opacity:0,
