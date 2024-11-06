@@ -1,5 +1,20 @@
 /* google fonts */
+<<<<<<< HEAD
 
+
+@font-face {
+    font-family: helvetica;
+    src: url(./helvetica-now-text-regular-woff-2-4479bd.woff2);
+}
+@font-face {
+    font-family: oswal-regular;
+    src: url(./text/Oswald-Regular.ttf);
+}
+@font-face {
+    font-family: oswal-light;
+    src: url(./text/Oswald-Light.ttf);
+}
+>>>>>>> origin/main
 
 @import url('https://fonts.googleapis.com/css2?family=Miniver&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,500;0,600;0,700;1,700&display=swap');
 *{
@@ -8,6 +23,7 @@
     padding:0;
     box-sizing:border-box;
 }
+<<<<<<< HEAD
  body #horizontal {
     background-color:var(--primary-color);
     /* width: 100%;
@@ -18,6 +34,12 @@
     backdrop-filter:blur(50px); */
     /* background: rgba(0,0,0,0.2); */
     }
+=======
+#horizontal {
+    /* background-color:var(--primary-color); */
+    overflow: hidden;
+}
+>>>>>>> origin/main
     
     @-webkit-keyframes backgroundScroll {
     from {background-position: 0 0;}
@@ -105,6 +127,7 @@ header{
     position: fixed;
     z-index: 5;
     width: 100%;
+<<<<<<< HEAD
     backdrop-filter: blur(30px);
     box-shadow: 0px 0px 30px rgb(0, 1, 8);
     border: 2px solid rgba(255,255,255,0.18);
@@ -112,6 +135,12 @@ header{
 .section-title{
     text-align: center;
     padding: 60px 0 100px;
+=======
+}
+.section-title{
+    text-align: center;
+    padding: 20px 0 40px;
+>>>>>>> origin/main
     text-transform: uppercase;
     font-size: var(--font-size-xl);
 }
@@ -126,6 +155,7 @@ header{
 }
 header .navbar{
     display:flex;
+<<<<<<< HEAD
     padding:20px;
     align-items: center;
     justify-content: space-between;
@@ -134,6 +164,21 @@ header .navbar{
     color: var(--white-color);
     font-size:var(--font-size-xl);
     font-weight: var(--font-weight-semibold);
+=======
+    padding:20px 10px;
+    align-items: center;
+    justify-content: space-between;
+    font-family: helvetica;
+    
+
+}
+.navbar .logo-text{
+    color: #2e2d2d;
+    font-size:var(--font-size-l);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: 2px;
+    font-family: helvetica;
+>>>>>>> origin/main
 }
 .navbar .nav-menu{
     display: flex;
@@ -141,7 +186,11 @@ header .navbar{
     
 }
 .navbar .nav-menu .nav-link{
+<<<<<<< HEAD
     color: var(--white-color);
+=======
+    color: #2e2d2d;
+>>>>>>> origin/main
     padding:10px 18px;
     border-radius: var(--border-radius-m);
     font-size: var(--font-size-m);
@@ -163,6 +212,10 @@ header .navbar{
     /* background-image: url("cprimage.webp"); */
     background-size: cover;
     background-position: center;
+<<<<<<< HEAD
+=======
+    overflow: hidden;
+>>>>>>> origin/main
     /* filter: blur(2px); */
     /* position: relative; */
 }
@@ -174,14 +227,27 @@ header .navbar{
     /* position: absolute; */
 }
 .hero-section .hero-details .title{
+<<<<<<< HEAD
     font-size: var(--font-size-xxl);
     color:var(--secondary-color);
     text-transform: uppercase;
 }
+=======
+    /* color:var(--secondary-color); */
+    color: #2e2d2d;
+    text-transform: uppercase;
+}
+.hero-section .hero-details h1{
+    font-family: oswal-regular;
+    font-size: 5rem;
+    letter-spacing: 2px;
+}
+>>>>>>> origin/main
 .hero-section .hero-details .subtitle{
     margin-top: 8px;
     max-width: 70%;
     font-size: var(--font-size-xl);
+<<<<<<< HEAD
     font-weight: var(--font-weight-semibold);
     color:var(--dark-color);
 }
@@ -190,6 +256,18 @@ header .navbar{
     max-width: 70%;
     margin: 24px 0px 40px;
     color: var(--dark-color);
+=======
+    font-family: oswal-regular;
+    font-weight: var(--font-weight-semibold);
+    color: #707070c9;
+}
+.hero-section .hero-details .description{
+    font-family: oswal-light;
+    font-size: 1.5rem;
+    max-width: 70%;
+    margin: 24px 0px 40px;
+    color: #303030;
+>>>>>>> origin/main
 }
 .hero-section .hero-details .button{
     padding: 10px 26px;
@@ -225,6 +303,7 @@ header .navbar{
 .hero-section .hero-image-wrapper:hover{
     transform: scale(1.1);
 }
+<<<<<<< HEAD
 
 /* about */
 .about-section {
@@ -238,6 +317,73 @@ header .navbar{
     align-items: center;
     justify-content: space-evenly;
     position: relative;
+=======
+.hero-section .move{
+    /* height: 13vh; */
+    background-color: yellow;
+    /* width: 100vw; */
+    display: flex;
+    /* align-items: center; */
+    padding: 1vw 0;
+    /* margin-bottom: 40px; */
+    overflow: hidden;
+    /* rotate: 2.3deg; */
+    /* gap: 3vw; */
+}
+/* .hero-section .move-rev{
+    rotate:380deg;
+} */
+.hero-section .move .masqute{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    padding: 0 2vw;
+    transform: translateX(-100%);
+    flex-shrink: 0;
+}
+.move .masqute h4{
+    font-size: 1.5em;
+    font-weight: 500;
+    font-family: machina;
+}
+.move .masqute img{
+    height: 3vw;
+    /* width: 20px; */
+}
+/* about */
+.about-section {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: var(--light-pink-color);
+    position: relative;
+}
+.about-section .bg-about{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-section .bg-about h1{
+    font-size: 20rem;
+    font-weight: 700;
+    font-family:oswal-regular;
+    color:  #707070c9;
+}
+.about-section .section-content{
+    /* z-index: 1; */
+    display: flex;
+    position: absolute;
+    gap: 50px;
+    padding:0px 50px;
+    padding: 120px 50px;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+>>>>>>> origin/main
 }
 .about-section .about-image-wrapper .about-image{
     width: 400px;
@@ -245,18 +391,33 @@ header .navbar{
     object-fit: cover;
     border-radius: var(--border-radius-circle);
 }
+<<<<<<< HEAD
 .about-section .about-details .selection-title{
     padding: 0;
 }
 .about-section .about-details{
     max-width:50%;
 
+=======
+.about-section .about-details h2{
+    padding-bottom: 32px;
+    font-family: oswal-regular;
+}
+.about-section .about-details{
+    max-width:50%;
+>>>>>>> origin/main
 }
 .about-section .about-details .text{
     line-height: 30px;
     margin: 0 50px 30px;
+<<<<<<< HEAD
     text-align: center;
     font-size: var(--font-size-m);
+=======
+    text-align: left;
+    font-size: var(--font-size-m);
+    
+>>>>>>> origin/main
 }
 .about-section .social-link-list{
     display: flex;
@@ -274,7 +435,11 @@ header .navbar{
 
 /* ------ menu section ------ */
 
+<<<<<<< HEAD
 /* .menu-section {
+=======
+.menu-section {
+>>>>>>> origin/main
     color: var(--white-color);
     background: var(--dark-color);
     padding: 50px 0 100px;
@@ -285,6 +450,7 @@ header .navbar{
    flex-wrap: wrap;
    gap: 110px;
    align-items: center; 
+<<<<<<< HEAD
    justify-content: space-evenly;
 }
 .menu-section .menu-list .menu-item{
@@ -313,17 +479,36 @@ header .navbar{
 }
 .menu-section .menu-list .menu-item .menu-image{
     height: 400px;
+=======
+   justify-content: space-between;
+}
+.menu-section .menu-list .menu-item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    width: calc(100% / 3 - 110px);
+    border: 5px white;
+}
+.menu-section .menu-list .menu-item .menu-image{
+    height: 300px;
+>>>>>>> origin/main
     width: 400px;
     max-width: 83%;
     aspect-ratio: 1;
     margin-bottom: 15px;
     object-fit: cover;
+<<<<<<< HEAD
     padding: 20px;
+=======
+>>>>>>> origin/main
 }
 .menu-section .menu-list .menu-item .name{
     font-size: var(--font-size-m);
     color: var(--secondary-color);
     text-transform: uppercase;
+<<<<<<< HEAD
 } */
 
 /* --------------General Styling for the Menu Section--------------- */
@@ -481,6 +666,10 @@ header .navbar{
 }
 
 
+=======
+}
+
+>>>>>>> origin/main
 /* testimonials or partner section */
 
 .testimonials-section{
