@@ -306,6 +306,9 @@ header .navbar{
     width: 100vw;
     overflow: hidden;
     background: var(--light-pink-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
 }
 .about-section .bg-about{
@@ -327,8 +330,8 @@ header .navbar{
     display: flex;
     position: absolute;
     gap: 50px;
-    padding:0px 50px;
-    padding: 120px 50px;
+    /* padding:0px 50px; */
+    padding: 120px 70px;
     align-items: center;
     justify-content: space-evenly;
     overflow: hidden;
