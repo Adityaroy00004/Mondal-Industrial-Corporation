@@ -105,6 +105,9 @@ header{
     position: fixed;
     z-index: 5;
     width: 100%;
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 30px rgb(0, 1, 8);
+    border: 2px solid rgba(255,255,255,0.18);
 }
 .section-title{
     text-align: center;
@@ -222,6 +225,7 @@ header .navbar{
 .hero-section .hero-image-wrapper:hover{
     transform: scale(1.1);
 }
+
 /* about */
 .about-section {
     padding: 120px 0;
@@ -437,22 +441,7 @@ header .navbar{
     color: #333;
 }
 
-.cta-btn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    cursor: pointer;
-    margin-top: 15px;
-    font-size: 1.1em;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
 
-.cta-btn:hover {
-    background-color: #45a049;
-    transform: scale(1.05); /* Slight zoom on hover */
-}
 
 /* Animation Effects */
 @keyframes fadeIn {

@@ -12,6 +12,15 @@ navLinks.forEach(link => {
     link.addEventListener("click", () => menuOpenButton.click());
 });
 
+// --------------------------------------
+// const contactlink = document.querrySelectorAll(".contact-form");
+// const buybutton = document.querrySelector("#buybtn");
+// contactlink.forEach(link => {
+//     link.addEventListener("click", () => buybutton.click());
+// });
+
+
+
 // initialize swiper
 
 const swiper = new Swiper('.slider-wrapper', {
