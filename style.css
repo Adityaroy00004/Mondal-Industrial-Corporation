@@ -1,7 +1,4 @@
 /* google fonts */
-<<<<<<< HEAD
-
-
 @font-face {
     font-family: helvetica;
     src: url(./helvetica-now-text-regular-woff-2-4479bd.woff2);
@@ -14,7 +11,6 @@
     font-family: oswal-light;
     src: url(./text/Oswald-Light.ttf);
 }
->>>>>>> origin/main
 
 @import url('https://fonts.googleapis.com/css2?family=Miniver&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,500;0,600;0,700;1,700&display=swap');
 *{
@@ -23,23 +19,10 @@
     padding:0;
     box-sizing:border-box;
 }
-<<<<<<< HEAD
- body #horizontal {
-    background-color:var(--primary-color);
-    /* width: 100%;
-    height: 100%;
-    background: url('cprpipe.webp');
-    background-position: center;
-    background-size: cover;
-    backdrop-filter:blur(50px); */
-    /* background: rgba(0,0,0,0.2); */
-    }
-=======
 #horizontal {
     /* background-color:var(--primary-color); */
     overflow: hidden;
 }
->>>>>>> origin/main
     
     @-webkit-keyframes backgroundScroll {
     from {background-position: 0 0;}
@@ -127,20 +110,10 @@ header{
     position: fixed;
     z-index: 5;
     width: 100%;
-<<<<<<< HEAD
-    backdrop-filter: blur(30px);
-    box-shadow: 0px 0px 30px rgb(0, 1, 8);
-    border: 2px solid rgba(255,255,255,0.18);
-}
-.section-title{
-    text-align: center;
-    padding: 60px 0 100px;
-=======
 }
 .section-title{
     text-align: center;
     padding: 20px 0 40px;
->>>>>>> origin/main
     text-transform: uppercase;
     font-size: var(--font-size-xl);
 }
@@ -155,16 +128,6 @@ header{
 }
 header .navbar{
     display:flex;
-<<<<<<< HEAD
-    padding:20px;
-    align-items: center;
-    justify-content: space-between;
-}
-.navbar .logo-text{
-    color: var(--white-color);
-    font-size:var(--font-size-xl);
-    font-weight: var(--font-weight-semibold);
-=======
     padding:20px 10px;
     align-items: center;
     justify-content: space-between;
@@ -178,7 +141,6 @@ header .navbar{
     font-weight: var(--font-weight-medium);
     letter-spacing: 2px;
     font-family: helvetica;
->>>>>>> origin/main
 }
 .navbar .nav-menu{
     display: flex;
@@ -186,11 +148,7 @@ header .navbar{
     
 }
 .navbar .nav-menu .nav-link{
-<<<<<<< HEAD
-    color: var(--white-color);
-=======
     color: #2e2d2d;
->>>>>>> origin/main
     padding:10px 18px;
     border-radius: var(--border-radius-m);
     font-size: var(--font-size-m);
@@ -212,10 +170,7 @@ header .navbar{
     /* background-image: url("cprimage.webp"); */
     background-size: cover;
     background-position: center;
-<<<<<<< HEAD
-=======
     overflow: hidden;
->>>>>>> origin/main
     /* filter: blur(2px); */
     /* position: relative; */
 }
@@ -227,12 +182,6 @@ header .navbar{
     /* position: absolute; */
 }
 .hero-section .hero-details .title{
-<<<<<<< HEAD
-    font-size: var(--font-size-xxl);
-    color:var(--secondary-color);
-    text-transform: uppercase;
-}
-=======
     /* color:var(--secondary-color); */
     color: #2e2d2d;
     text-transform: uppercase;
@@ -242,21 +191,10 @@ header .navbar{
     font-size: 5rem;
     letter-spacing: 2px;
 }
->>>>>>> origin/main
 .hero-section .hero-details .subtitle{
     margin-top: 8px;
     max-width: 70%;
     font-size: var(--font-size-xl);
-<<<<<<< HEAD
-    font-weight: var(--font-weight-semibold);
-    color:var(--dark-color);
-}
-.hero-section .hero-details .description{
-    font-size: var(--font-size-m);
-    max-width: 70%;
-    margin: 24px 0px 40px;
-    color: var(--dark-color);
-=======
     font-family: oswal-regular;
     font-weight: var(--font-weight-semibold);
     color: #707070c9;
@@ -267,7 +205,6 @@ header .navbar{
     max-width: 70%;
     margin: 24px 0px 40px;
     color: #303030;
->>>>>>> origin/main
 }
 .hero-section .hero-details .button{
     padding: 10px 26px;
@@ -303,21 +240,6 @@ header .navbar{
 .hero-section .hero-image-wrapper:hover{
     transform: scale(1.1);
 }
-<<<<<<< HEAD
-
-/* about */
-.about-section {
-    padding: 120px 0;
-    background: var(--light-pink-color);
-}
-.about-section .section-content{
-    display: flex;
-    gap: 50px;
-    padding:0px 50px;
-    align-items: center;
-    justify-content: space-evenly;
-    position: relative;
-=======
 .hero-section .move{
     /* height: 13vh; */
     background-color: yellow;
@@ -383,7 +305,6 @@ header .navbar{
     align-items: center;
     justify-content: space-evenly;
     overflow: hidden;
->>>>>>> origin/main
 }
 .about-section .about-image-wrapper .about-image{
     width: 400px;
@@ -391,33 +312,19 @@ header .navbar{
     object-fit: cover;
     border-radius: var(--border-radius-circle);
 }
-<<<<<<< HEAD
-.about-section .about-details .selection-title{
-    padding: 0;
-}
-.about-section .about-details{
-    max-width:50%;
-
-=======
 .about-section .about-details h2{
     padding-bottom: 32px;
     font-family: oswal-regular;
 }
 .about-section .about-details{
     max-width:50%;
->>>>>>> origin/main
 }
 .about-section .about-details .text{
     line-height: 30px;
     margin: 0 50px 30px;
-<<<<<<< HEAD
-    text-align: center;
-    font-size: var(--font-size-m);
-=======
     text-align: left;
     font-size: var(--font-size-m);
     
->>>>>>> origin/main
 }
 .about-section .social-link-list{
     display: flex;
@@ -435,11 +342,7 @@ header .navbar{
 
 /* ------ menu section ------ */
 
-<<<<<<< HEAD
-/* .menu-section {
-=======
 .menu-section {
->>>>>>> origin/main
     color: var(--white-color);
     background: var(--dark-color);
     padding: 50px 0 100px;
@@ -450,36 +353,6 @@ header .navbar{
    flex-wrap: wrap;
    gap: 110px;
    align-items: center; 
-<<<<<<< HEAD
-   justify-content: space-evenly;
-}
-.menu-section .menu-list .menu-item{
-    display: flex;
-    flex: wrap;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    width: calc(100% / 3 - 110px);
-    border: 5px white;
-    border: 2px solid white;
-    height: 700px;
-    background-color: #252525;
-    transition: 1s;
-}
-.menu-section .menu-list .menu-item:hover{
-    border: 1px solid var(--secondary-color);
-    transform: scale(1.05);
-    border-radius: 5px; */
-    /* box-shadow: 10px 10px 10px white;
-    backdrop-filter: blur(50px); */
-/* }
-.menu-section .menu-list .menu-item .text{
-    text-align: left;
-    padding: 10px;
-}
-.menu-section .menu-list .menu-item .menu-image{
-    height: 400px;
-=======
    justify-content: space-between;
 }
 .menu-section .menu-list .menu-item{
@@ -493,183 +366,18 @@ header .navbar{
 }
 .menu-section .menu-list .menu-item .menu-image{
     height: 300px;
->>>>>>> origin/main
     width: 400px;
     max-width: 83%;
     aspect-ratio: 1;
     margin-bottom: 15px;
     object-fit: cover;
-<<<<<<< HEAD
-    padding: 20px;
-=======
->>>>>>> origin/main
 }
 .menu-section .menu-list .menu-item .name{
     font-size: var(--font-size-m);
     color: var(--secondary-color);
     text-transform: uppercase;
-<<<<<<< HEAD
-} */
-
-/* --------------General Styling for the Menu Section--------------- */
-
-/* General Menu Section */
-.menu-section {
-    padding: 60px 0;
-    background-color: #f5f7f8;
-    text-align: center;
 }
 
-.section-title {
-    font-size: 2.5em;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 40px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    opacity: 0;
-    animation: fadeIn 1s ease-in-out forwards;
-}
-
-/* Animating the product list */
-.menu-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-/* Hover effect for menu item cards */
-.menu-item {
-    width: 300px;
-    background-color: #fff;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-    opacity: 0;
-    animation: fadeInUp 0.5s ease-out forwards;
-    position: relative;
-    transform: translateY(20px); /* Start from below */
-}
-
-/* Hover effect for product card */
-.menu-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-    background-color: #fafafa; /* Slight background change */
-}
-
-/* Image zoom effect */
-.menu-item .menu-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-.menu-item:hover .menu-image {
-    transform: scale(1.1);
-}
-
-/* Title hover effect */
-.menu-item .name {
-    font-size: 1.5em;
-    font-weight: 600;
-    color: #333;
-    margin-top: 20px;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
-}
-
-.menu-item:hover .name {
-    color: #ff7f50;
-    text-decoration: underline;
-}
-
-/* Description with fade-in effect */
-.menu-item .text {
-    font-size: 1em;
-    color: #777;
-    margin-top: 15px;
-    max-height: 80px;
-    overflow: hidden;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
-    line-height: 1.5;
-    opacity: 0;
-    animation: fadeIn 0.8s ease-in-out forwards 0.4s; /* Delay for smooth appearance */
-}
-
-/* Read More Button */
-.menu-item .read-more-btn {
-    background-color: #ff7f50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 15px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    opacity: 0;
-    animation: fadeIn 0.8s ease-in-out forwards 0.6s; /* Slight delay */
-}
-
-.menu-item .read-more-btn:hover {
-    background-color: #ff5722;
-    transform: scale(1.05); /* Slight zoom on hover */
-}
-
-/* Price and CTA Button */
-.product-price {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-top: 20px;
-    color: #333;
-}
-
-
-
-/* Animation Effects */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Responsive Design for Smaller Screens */
-@media (max-width: 768px) {
-    .menu-list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .menu-item {
-        width: 90%;
-    }
-
-    .section-title {
-        font-size: 2em;
-    }
-}
-
-
-=======
-}
-
->>>>>>> origin/main
 /* testimonials or partner section */
 
 .testimonials-section{
