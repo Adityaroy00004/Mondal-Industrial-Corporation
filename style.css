@@ -19,10 +19,10 @@
     padding:0;
     box-sizing:border-box;
 }
-#horizontal {
-    /* background-color:var(--primary-color); */
+/* #horizontal {
+    background-color:var(--primary-color);
     overflow: hidden;
-}
+} */
     
     @-webkit-keyframes backgroundScroll {
     from {background-position: 0 0;}
@@ -36,8 +36,8 @@
 
 :root{
     --white-color:white;
-    --dark-color:black;
-    --primary-color:slategrey;
+    --dark-color:BLACK;
+    --primary-color:#252525;
     --secondary-color:#ffa500;
     --light-pink-color:#faf4f5;
     --medium-gray-color:#ccc;
@@ -63,6 +63,7 @@
 }
 html{
     scroll-behavior: smooth;
+    background-color: var(--dark-color);
 }
 ul{
     list-style: none;
@@ -106,11 +107,12 @@ button{
 /* -----------navbar----------- */
 
 header{
-    background:var(--white-color);
+    background:var(--secondary-color);
+    backdrop-filter:blur(40px);
+    background: rgba(0,0,0,0.5);
     position: fixed;
     z-index: 5;
     width: 100%;
-    backdrop-filter: blur(30px);
     box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
     border: 2px solid rgba(255, 255, 255, 0.18);
 }
@@ -137,7 +139,7 @@ header .navbar{
     font-family: helvetica;
 }
 .navbar .logo-text{
-    color: #2e2d2d;
+    color: var(--white-color);
     font-size:var(--font-size-l);
     font-weight: var(--font-weight-medium);
     letter-spacing: 2px;
@@ -149,16 +151,21 @@ header .navbar{
     
 }
 .navbar .nav-menu .nav-link{
-    color: #2e2d2d;
-    padding:10px 18px;
+    color: var(--secondary-color);
+    padding:10px 15px;
     border-radius: var(--border-radius-m);
     font-size: var(--font-size-m);
     transition: 0.3s ease;
+    margin: 0 10px;
 }
 .navbar .nav-menu .nav-link:hover{
-    color:var(--dark-color);
-    background: var(--secondary-color);
+    color:var(--white-color);
+    /* border: solid white; */
+    /* background: var(--secondary-color); */
     /* padding: 11px 19px; */
+}
+.navbar .nav-menu .nav-link:active{
+    background-color: #ccc;
 }
 .navbar :where(#menu-close-button,#menu-open-button){
     display:none;
@@ -168,22 +175,7 @@ header .navbar{
 
 .hero-section{
     min-height: 100vh;
-    /* background-image: url("cprimage.webp"); */
-    background-size: cover;
     background-position: center;
-    overflow: hidden;
-    /* filter: blur(2px); */
-    position: relative;
-}
-.hero-section .cursor{
-    position: absolute;
-    height: 6vh;
-    width: 3vw;
-    border-radius: 50%;
-    opacity: 0;
-    scale: 0;
-    z-index: 0;
-    background-color: rgb(197, 197, 197);
 }
 .hero-section .section-content{
     display: flex;
@@ -198,7 +190,7 @@ header .navbar{
     z-index: 4;
 }
 .hero-section .hero-details h1{
-    color: #2e2d2d;
+    color: #a6a6a6d5;
     font-family: oswal-regular;
     text-transform: uppercase;
     font-size: 5rem;
@@ -220,7 +212,7 @@ header .navbar{
     font-size: 1.5rem;
     max-width: 70%;
     margin: 24px 0px 40px;
-    color: #303030;
+    color: var(--white-color);
     z-index: 9;
 }
 .hero-section .hero-details .button{
@@ -315,7 +307,7 @@ header .navbar{
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    background: var(--light-pink-color);
+    background: var(--dark-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -333,7 +325,7 @@ header .navbar{
     font-size: 20rem;
     font-weight: 700;
     font-family:oswal-regular;
-    color:  black;
+    color: var(--white-color);
 }
 .about-section .section-content{
     /* z-index: 1; */
@@ -359,12 +351,15 @@ header .navbar{
 .about-section .about-details{
     max-width:50%;
 }
+.about-section .about-details .section-title{
+        color: var(--white-color);
+}
 .about-section .about-details .text{
     line-height: 30px;
     margin: 0 50px 30px;
     text-align: left;
     font-size: var(--font-size-m);
-    
+    color: var(--white-color);
 }
 .about-section .social-link-list{
     display: flex;
@@ -470,7 +465,7 @@ header .navbar{
 
 .testimonials-section{
     padding: 50px 0 100px;
-    background: var(--light-pink-color);
+    background: var(--primary-color);
 }
 .testimonials-section .testimonials-list{
     padding: 0 50px;
@@ -579,7 +574,7 @@ header .navbar{
     color: var(--primary-color);
 }
 
-/* footer section */
+/* ----------------------footer section------------------------------ */
 
 .footer-section{
    padding: 20px 0;
@@ -642,21 +637,22 @@ header .navbar{
         top:0;
         height: 100%;
         width: 100%;
-        backdrop-filter:blur(5px);
-        background: rgba(0,0,0,0.2);
+        /* backdrop-filter:blur(5px);
+        background: rgba(0,0,0,0.2); */
     }
+
     .navbar :where(#menu-close-button,#menu-open-button){
         display: block;
         font-size: var(--font-size-l);
     }
     .navbar #menu-close-button{
-        color:var(--dark-color);
+        color:var(--white-color);
         position: absolute;
         right: 30px;
         top: 30px;
     }
     .navbar #menu-open-button{
-        color: var(--dark-color);
+        color: var(--white-color);
         position: absolute;
         right: 30px;
         top: 30px;
@@ -667,18 +663,20 @@ header .navbar{
        left:-300px;
        top:0;
        width:300px;
-       height:100%;
+       height:1000px;
        display: flex;
        flex-direction: column;
        align-items: center;
        padding-top: 100px;
-       background: var(--primary-color);
+       background: var(--dark-color);
        transition: left 0.2s ease;
+       backdrop-filter:blur(5px);
+        background: rgba(0,0,0,0.5);
     }
     body.show-mobile-menu .navbar .nav-menu{
         left: 0;
     }
-    .navbar .nav-menu .nav-link{
+    .navbar .nav-menu .nav-link{ 
         color: var(--white-color);
         /* background-color: #3b141c; */
         font-size: var(--font-size-l);
@@ -692,6 +690,8 @@ header .navbar{
         padding: 30px 20px 20px;
         flex-direction: column-reverse;
         justify-content: center;
+        backdrop-filter:blur(5px);
+        background: rgba(0,0,0,0.2);
     }
     .hero-section .hero-image-wrapper{
         max-width: 100%;
@@ -745,6 +745,7 @@ header .navbar{
     .testimonials-section .swiper-slide-button{
         display: none;
     }
+    
 }
 
 

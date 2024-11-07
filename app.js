@@ -12,6 +12,15 @@ navLinks.forEach(link => {
     link.addEventListener("click", () => menuOpenButton.click());
 });
 
+// --------------------------------------
+// const contactlink = document.querrySelectorAll(".contact-form");
+// const buybutton = document.querrySelector("#buybtn");
+// contactlink.forEach(link => {
+//     link.addEventListener("click", () => buybutton.click());
+// });
+
+
+
 // initialize swiper
 
 const swiper = new Swiper('.slider-wrapper', {
@@ -51,6 +60,7 @@ const swiper = new Swiper('.slider-wrapper', {
 
   });
 
+  
   function infiniteSlid(){
     window.addEventListener("wheel",function(dets){
       if(dets.deltaY > 0){
@@ -152,4 +162,3 @@ customCusor();
 
 
 
-  
