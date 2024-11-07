@@ -177,6 +177,13 @@ header .navbar{
     min-height: 100vh;
     background-position: center;
 }
+.hero-section .cursor{
+    height: 6vh;
+    width: 3vw;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    z-index: 0;
+}
 .hero-section .section-content{
     display: flex;
     align-items:center;
