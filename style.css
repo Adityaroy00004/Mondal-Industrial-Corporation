@@ -177,10 +177,17 @@ header .navbar{
     min-height: 100vh;
     background-position: center;
 }
+.hero-section .cursor{
+    height: 6vh;
+    width: 3vw;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    z-index: 0;
+}
 .hero-section .section-content{
     display: flex;
     align-items:center;
-    min-height: 100vh;
+    min-height: 100vh;  
     justify-content: space-evenly;
     position: relative;
 }
@@ -194,7 +201,7 @@ header .navbar{
     font-family: oswal-regular;
     text-transform: uppercase;
     font-size: 5rem;
-    line-height: 7vw;
+    /* line-height: 7vh; */
     letter-spacing: 2px;
     z-index: 4;
 }
@@ -359,7 +366,7 @@ header .navbar{
 
 }
 .hero-section .hero-image-wrapper{
-    
+    padding-left: 0;
     height: 450px;
     box-shadow: aqua;
     z-index: 4;
@@ -440,6 +447,7 @@ header .navbar{
     font-weight: 700;
     font-family:oswal-regular;
     color: var(--white-color);
+    text-align: center;
 }
 .about-section .section-content{
     /* z-index: 1; */
@@ -463,14 +471,14 @@ header .navbar{
     font-family: oswal-regular;
 }
 .about-section .about-details{
-    max-width:50%;
+    max-width:60%;
 }
 .about-section .about-details .section-title{
         color: var(--white-color);
 }
 .about-section .about-details .text{
     line-height: 30px;
-    margin: 0 50px 30px;
+    /* margin: 0 50px 30px; */
     text-align: left;
     font-size: var(--font-size-m);
     color: var(--white-color);
@@ -587,11 +595,12 @@ header .navbar{
 }
 .testimonals-section .slider-wrapper{
     overflow: hidden;
-    margin: 0 40px 50px;
+    margin: 0 0px 50px;
 }
 .testimonials-section .testimonial{
     user-select: none;
     display: flex;
+    /* justify-content: space-evenly; */
     padding: 35px;
     text-align: center;
     flex-direction: column;
@@ -772,7 +781,7 @@ header .navbar{
         color: var(--white-color);
         position: absolute;
         right: 30px;
-        top: 30px;
+        top: 20px;
     }
     .navbar .nav-menu{
        display: block;
@@ -790,6 +799,7 @@ header .navbar{
        backdrop-filter:blur(5px);
         background: rgba(0,0,0,0.5);
     }
+    
     body.show-mobile-menu .navbar .nav-menu{
         left: 0;
     }
@@ -806,7 +816,7 @@ header .navbar{
     .hero-section .section-content {
         gap:50px;
         text-align: center;
-        padding: 30px 20px 20px;
+        padding: 30px 0 20px;
         flex-direction: column-reverse;
         justify-content: center;
         backdrop-filter:blur(5px);
@@ -815,6 +825,27 @@ header .navbar{
     .hero-section .hero-image-wrapper{
         max-width: 100%;
         margin-right: 0;
+    }
+
+    
+    .about-section .section-content{
+        /* z-index: 1; */
+        max-height: 90%;
+        flex-direction: column;
+        gap: 10px;
+        padding:0px 30px;
+        /* padding: 120px 70px; */
+    }
+    .about-section .about-details .text{
+        line-height: 20px;
+        /* margin: 0 50px 30px; */
+        padding-bottom: 5px;
+        text-align: left;
+        font-size: var(--font-size-s);
+    }
+
+    .about-section .about-details h2{
+        padding:0px;
     }
     .about-section .section-content{
        gap:70px;
@@ -848,9 +879,14 @@ header .navbar{
         width: 250px;
         max-width: 200px;
     }
+    .hero-section .section-content{
+        align-items: center;
+        flex-direction: column-reverse;
+    }
     .contact-section .section-content{
         align-items: center;
         flex-direction: column-reverse;
+
     }
 }
 /* ------responsive media querry code for max width 640px----- */
@@ -864,7 +900,43 @@ header .navbar{
     .testimonials-section .swiper-slide-button{
         display: none;
     }
-    
+    .navbar .logo-text{
+        font-size:var(--font-size-m);
+    }
+    .hero-section .hero-details h1{
+        font-size: 2.5rem;
+        /* text-align: left; */
+    }
+    .about-section .section-content{
+        /* z-index: 1; */
+        max-height: 90%;
+        flex-direction: column;
+        gap: 10px;
+        padding:0px 30px;
+        /* padding: 120px 70px; */
+    }
+    .about-section .about-details .text{
+        line-height: 20px;
+        /* margin: 0 50px 30px; */
+        padding-bottom: 5px;
+        text-align: left;
+        font-size: var(--font-size-s);
+    }
+
+    .about-section .about-details h2{
+        padding:0px;
+    }
+
+    .contact-section .contact-info-list .contact-info{
+        padding-left: 20px;
+    }
+    .footer-section .section-content{
+        padding-left: 20px;
+    }
+    .footer-section .social-link-list{
+        margin:0 25px;
+    }
+
 }
 
 
