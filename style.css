@@ -198,7 +198,7 @@ header .navbar{
     letter-spacing: 2px;
     z-index: 4;
 }
-.hero-section .hero-details .subtitle{
+/* .hero-section .hero-details .subtitle{
     margin-top: 8px;
     max-width: 70%;
     font-size: var(--font-size-xl);
@@ -206,7 +206,30 @@ header .navbar{
     font-weight: var(--font-weight-semibold);
     color: #707070c9;
     z-index: 4;
-}
+} */
+/* .wrapper.six{
+    background-color: #222222;
+  } */
+  .flicker {
+    font-size: 2rem;
+    font-family: 'Merienda', sans-serif;
+    margin: 1rem auto;
+    color: #fffefe61;
+    background: -webkit-gradient(linear, left top, right top, from(#e6e6e6), to(#1d1c1c), color-stop(0.8, #ffffff)) no-repeat;
+    background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.8, #fff)) no-repeat;
+    background-size: 100px 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: flick 1.8s infinite;
+  }
+  @keyframes flick {
+    0% {
+      background-position: top left;
+    }
+    100% {
+      background-position: top right;
+    }
+  }
 .hero-section .hero-details .description{
     font-family: oswal-light;
     font-size: 1.5rem;
@@ -215,7 +238,7 @@ header .navbar{
     color: var(--white-color);
     z-index: 9;
 }
-.hero-section .hero-details .button{
+/* .hero-section .hero-details .button{
     padding: 10px 26px;
     border: 2px solid transparent;
     color: var(--dark-color);
@@ -224,14 +247,105 @@ header .navbar{
     font-weight: var(--font-weight-medium);
     transition: 1s ease;
     z-index: 4;
-}
-.hero-section .hero-details .button:hover,
+} */
+/* .hero-section .hero-details .button:hover,
 .hero-section .hero-details .contact-us{
     color: var(--blue-color);
     border-color: var(--blue-color);
     background: transparent;
     z-index: 4;
-}
+} */
+.hero-section .hero-details .button{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button {
+    min-width: 200px;
+    min-height: 60px;
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: var(--secondary-color);
+    /* background: var(--secondary-color); */
+    /* background: linear-gradient(90deg, var(--secondary-color) 0%, var(--secondary-color) 100%); */
+    border: var(--white-color);
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px var(--dark-color);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    /* padding: 10px; */
+    border: 6px solid white;
+    }
+  
+  .button::before {
+    content: '';
+    border-radius: 50px;
+    padding: 0 15px;
+    min-width: 150px;
+    min-height: 50px;
+    border: 6px solid white;
+    box-shadow: 0 0 60px var(--secondary-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .button:hover, 
+  .button:focus {
+    color: var(--secondary-color);
+    transform: translateY(-6px);
+  }
+  
+  .button:hover::before, 
+  .button:focus::before {
+    opacity: 1;
+  }
+  
+  .button::after {
+    /* content: ''; */
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid var(--secondary-color);
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+  
+  .button:hover::after, 
+  .button:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  /* @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+  } */
 .hero-section .hero-details .contact-us:hover{
     color: var(--dark-color);
     border-color: var(--dark-color);
@@ -402,7 +516,7 @@ header .navbar{
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
 }
@@ -556,7 +670,8 @@ header .navbar{
     max-height: 50%;
 }
 .contact-section .contact-form textarea .form-input{
-    height: 100px;
+    height: 100%;
+    width: 100%;
     padding: 12px;
     resize: vertical;
 }
