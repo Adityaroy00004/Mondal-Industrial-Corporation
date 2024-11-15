@@ -2,6 +2,11 @@ const navLinks = document.querySelectorAll(".nav-menu .nav-link");
 const menuOpenButton = document.querySelector("#menu-open-button");
 const menuCloseButton = document.querySelector("#menu-close-button");
 
+// const scroll = new LocomotiveScroll({
+//   el: document.querySelector('[data-scroll-container]'),
+//   smooth: true
+// });
+
 menuOpenButton.addEventListener("click", () => {
     document.body.classList.toggle("show-mobile-menu");
 });
@@ -88,29 +93,29 @@ const swiper = new Swiper('.slider-wrapper', {
   }
   infiniteSlid()
  
-function customCusor(){
-  let heroContent = document.querySelector(".hero-section .section-content");
+// function customCusor(){
+//   let heroContent = document.querySelector(".hero-section .section-content");
 
-  heroContent.addEventListener("mousemove", function(dets) {
-      gsap.to(".hero-section .cursor",{
-        x:dets.x-20,
-        y:dets.y-30,
-        scale:1,
-        opacity:1,
-        ease:"back.out"
-      })
-  });
-  heroContent.addEventListener("mouseleave", function(dets) {
-    gsap.to(".hero-section .cursor",{
-      x:dets.x-20,
-      y:dets.y-30,
-      scale:0,
-      opacity:0,
-      ease:"back.out"
-    })
-  });
-}
-customCusor();
+//   heroContent.addEventListener("mousemove", function(dets) {
+//       gsap.to(".hero-section .cursor",{
+//         x:dets.x-20,
+//         y:dets.y-30,
+//         scale:1,
+//         opacity:1,
+//         ease:"back.out"
+//       })
+//   });
+//   heroContent.addEventListener("mouseleave", function(dets) {
+//     gsap.to(".hero-section .cursor",{
+//       x:dets.x-20,
+//       y:dets.y-30,
+//       scale:0,
+//       opacity:0,
+//       ease:"back.out"
+//     })
+//   });
+// }
+// customCusor();
 
   gsap.from(".hero-section .hero-details h1,.hero-section .hero-details h3",{
     y:100,
