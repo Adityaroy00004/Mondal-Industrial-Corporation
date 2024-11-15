@@ -164,6 +164,29 @@ const swiper = new Swiper('.slider-wrapper', {
       end:"top 30%",
     }
   })
-
+  gsap.from(".menu-list .menu-item",{
+    y:200,
+    scale:1,
+    opacity:0,
+    duration:2,
+    scrollTrigger:{
+      trigger:".menu-section",
+      scroll:"body",
+      start:"top 60%",
+      end:"top 30%",
+    }
+  })
+  gsap.from(".sctgr",{
+    // y:200,
+    scale:1,
+    opacity:0,
+    duration:3,
+    scrollTrigger:{
+      trigger:".testimonials-section",
+      scroll:"body",
+      start:"top 60%",
+      end:"top 30%",
+    }
+  })
 
 
