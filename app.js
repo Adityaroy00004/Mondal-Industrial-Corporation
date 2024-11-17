@@ -65,33 +65,6 @@ const swiper = new Swiper('.slider-wrapper', {
 
   });
 
-  
-  function infiniteSlid(){
-    window.addEventListener("wheel",function(dets){
-      if(dets.deltaY > 0){
-        gsap.to(".move .masqute",{
-          transform: "translateX(-200%)",
-          duration:4,
-          repeat:-1,
-          ease:"none"
-        })
-        gsap.to(".masqute img",{
-          rotate:180,
-        })
-      }else{
-        gsap.to(".move .masqute",{
-          transform: "translateX(0%)",
-          duration:4,
-          repeat:-1,
-          ease:"none"
-        })
-        gsap.to(".masqute img",{
-          rotate:0
-        })
-      }
-    })
-  }
-  infiniteSlid()
  
 // function customCusor(){
 //   let heroContent = document.querySelector(".hero-section .section-content");
