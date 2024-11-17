@@ -146,6 +146,18 @@ header .navbar{
     letter-spacing: 2px;
     font-family: helvetica;
 }
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo-image {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+}
+
 .navbar .nav-menu{
     display: flex;
     gap: 5px;
@@ -177,18 +189,47 @@ header .navbar{
 .hero-section{
     min-height: 100vh;
     background-position: center;
-    border-radius: 10px;
-    margin: 80px 10px;
-    background-color: var(--dark-color);
+    /* background-color: var(--dark-color); */
+    min-height: 100vh;
+    background: url("bgimg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
 }
 .hero-section .section-content{
     display: flex;
     align-items:center;
     min-height: 100vh;  
     justify-content: space-evenly;
+    text-align: center;
     position: relative;
     flex: wrap;
     gap: 20px;
+    max-width: 1200px; /* Constrain the width for a clean design */
+    margin: 80px auto 0;
+    padding: 50px 20px;
+
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.447); /* Transparent white background for the glass effect */
+    backdrop-filter: blur(8px); /* Frosted glass effect */
+    border-radius: 15px; /* Rounded corners */
+    max-width: 800px; /* Limit width for better readability */
+    width: 100%;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Soft outer shadow for depth */
+    position: relative;
+    text-align: center;
 }
 .hero-section .hero-details .title{
     /* color:var(--secondary-color); */
@@ -240,9 +281,10 @@ header .navbar{
     font-family: oswal-light;
     font-size: 1.5rem;
     max-width: 70%;
-    margin: 24px 0px 40px;
+    margin: 20px auto;
     color: var(--white-color);
     z-index: 9;
+    text-align: center;
 }
 /* .hero-section .hero-details .button{
     padding: 10px 26px;
@@ -267,6 +309,11 @@ header .navbar{
     align-items: center;
     justify-content: center;
   }
+  .wrap.buttons {
+    display: flex;
+    justify-content: center; /* Horizontally center the button */
+    margin-top: 30px; /* Adds space between the description and the button */
+}
   
   .button {
     min-width: 200px;
@@ -362,7 +409,7 @@ header .navbar{
   display: flex;
   gap: 23px;
   z-index: 4;
-
+  text-align: center;
 }
 .hero-section .hero-image-wrapper{
     padding-left: 0;
@@ -391,7 +438,7 @@ header .navbar{
 }
 .hero-section .move{
     /* height: 13vh; */
-    background-color: #FFA500;
+    background-color: var(--white-color);
     /* width: 100vw; */
     display: flex;
     /* align-items: center; */
@@ -433,7 +480,7 @@ header .navbar{
     justify-content: center;
     position: relative;
     border-radius: 200px;
-    margin: 10px 10px;
+    margin: 200px 10px;
 }
 .about-section:hover{
     border: 5px solid var(--secondary-color);

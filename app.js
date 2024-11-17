@@ -164,23 +164,25 @@ const swiper = new Swiper('.slider-wrapper', {
       end:"top 30%",
     }
   })
-  // gsap.from(".menu-list .menu-item",{
-  //   y:200,
-  //   scale:1,
-  //   opacity:0,
-  //   duration:2,
-  //   scrollTrigger:{
-  //     trigger:".menu-section",
-  //     scroll:"body",
-  //     start:"top 60%",
-  //     end:"top 30%",
-  //   }
-  // })
+  gsap.from(".menu-item",{
+    // x:-100,
+    scale:1,
+    opacity:0,
+    duration:1,
+    stagger:0.5,
+    scrollTrigger:{
+      trigger:".menu-section",
+      scroll:"body",
+      start:"top 60%",
+      end:"top 30%",
+      scrollBehaviour:"smooth",
+    }
+  })
   gsap.from(".sctgr",{
     // y:200,
     scale:1,
     opacity:0,
-    duration:3,
+    duration:5,
     scrollTrigger:{
       trigger:".testimonials-section",
       scroll:"body",
@@ -188,5 +190,43 @@ const swiper = new Swiper('.slider-wrapper', {
       end:"top 30%",
     }
   })
-
-
+  gsap.from(".form-input",{
+    x:500,
+    scale:1,
+    opacity:0,
+    duration:1,
+    stagger:0.5,
+    scrollTrigger:{
+      trigger:".contact-section",
+      scroll:"body",
+      start:"top 60%",
+      end:"top 30%",
+      scrollBehaviour:"smooth",
+    }
+  })
+  gsap.from(".submit-button",{
+    x:-500,
+    scale:1,
+    opacity:0,
+    duration:1,
+    scrollTrigger:{
+      trigger:".contact-section",
+      scroll:"body",
+      start:"top 60%",
+      end:"top 30%",
+      scrollBehaviour:"smooth",
+    }
+  })
+  gsap.from(".contact-info",{
+    // x:-500,
+    scale:1,
+    opacity:0,
+    duration:15,
+    scrollTrigger:{
+      trigger:".contact-section",
+      scroll:"body",
+      start:"top 60%",
+      end:"top 30%",
+      scrollBehaviour:"smooth",
+    }
+  })
